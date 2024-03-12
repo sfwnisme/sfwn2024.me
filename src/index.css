@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+* {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: light 300 | regular 400 | medium 500 | semibold 600 | bold 700; */
+  font-style: normal;
+}
