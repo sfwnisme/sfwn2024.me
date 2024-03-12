@@ -1,9 +1,6 @@
-import React from "react";
 import Wrapper from "../../../components/Wrapper";
 import {} from "react-icons";
 import {
-  AiFillLinkedin,
-  AiOutlineArrowUp,
   AiOutlineFacebook,
   AiOutlineGithub,
   AiOutlineInstagram,
