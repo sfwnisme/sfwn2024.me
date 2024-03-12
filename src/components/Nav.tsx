@@ -3,7 +3,7 @@ import { IoIosClose } from "react-icons/io";
 import { TbMenu } from "react-icons/tb";
 
 const Nav = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState("hidden");
 
   const navData: Record<string, string>[] = [
     {
@@ -42,7 +42,7 @@ const Nav = () => {
       <ul
         className={`
         capitalize flex items-center gap-2 max-md:flex-col max-md:items-start max-md:fixed max-md:top-20 max-md:right-1 max-md:bg-gray-50 max-md:shadow-md max-md:min-w-40 max-md:rounded 
-        max-md:${toggle ? "block" : "hidden"}
+        max-md:${toggle}
         p-2
         `}
       >
@@ -54,16 +54,20 @@ const Nav = () => {
       >
         contact
       </button>
-      {toggle ? (
+      {toggle === 'block' ? (
         <IoIosClose
           size={"1.5rem"}
-          onClick={() => setToggle((prev) => !prev)}
+          onClick={() =>
+            setToggle((prev) => (prev === "hidden" ? "block" : "hidden"))
+          }
           className="md:hidden cursor-pointer"
         />
       ) : (
         <TbMenu
           size={"1.5rem"}
-          onClick={() => setToggle((prev) => !prev)}
+          onClick={() =>
+            setToggle((prev) => (prev === "hidden" ? "block" : "hidden"))
+          }
           className="md:hidden cursor-pointer"
         />
       )}
