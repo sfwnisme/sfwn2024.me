@@ -10,8 +10,8 @@ const Wrapper = (props: Props) => {
   return (
     <div className=" min-h-screen flex items-center justify-center bg-white sticky top-10">
       <div className="flex max-sm:flex-col items-start justify-center gap-40 max-sm:gap-4">
-        <h3 className="text-base text-gray-500 font-medium inline-flex mr-auto items-center gap-1">
-          <span className="bg-gray-500 h-px w-[100%] flex rounded flex-shrink-0"></span>
+        <h3 className="text-base max-md:text-xl text-gray-500 font-medium inline-flex mr-auto items-center gap-1">
+          <span className="bg-gray-500 h-px max-md:h-2 w-[100%] max-md:w-2 flex rounded flex-shrink-0"></span>
           {title}
         </h3>
         <div className="text-[15px] md:text-base">{children}</div>
