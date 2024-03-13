@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { IoIosClose } from "react-icons/io";
+import { IoIosClose, IoMdClose } from "react-icons/io";
 import { TbMenu } from "react-icons/tb";
 
 const Nav = () => {
-  const [toggle, setToggle] = useState("hidden");
+  const [toggle, setToggle] = useState(false);
 
   const navData: Record<string, string>[] = [
     {
@@ -39,12 +39,22 @@ const Nav = () => {
           className="h-full"
         />
       </div>
+      {toggle ? (
+        <ul
+          className={`
+        capitalize items-center gap-2 max-md:flex-col max-md:items-start max-md:fixed max-md:top-20 max-md:right-1 max-md:bg-gray-50 max-md:shadow-md max-md:min-w-40 max-md:rounded 
+        p-2
+        md:hidden
+        `}
+        >
+          {navLinks}
+        </ul>
+      ) : undefined}
       <ul
         className={`
-        capitalize items-center gap-2 max-md:flex-col max-md:items-start max-md:fixed max-md:top-20 max-md:right-1 max-md:bg-gray-50 max-md:shadow-md max-md:min-w-40 max-md:rounded 
-        // idden
-        ${toggle}
+        capitalize flex items-center gap-2 
         p-2
+        max-md:hidden
         `}
       >
         {navLinks}
@@ -55,21 +65,17 @@ const Nav = () => {
       >
         contact
       </button>
-      {toggle === "flex" ? (
-        <IoIosClose
+      {toggle ? (
+        <IoMdClose
           size={"1.5rem"}
-          onClick={() =>
-            setToggle((prev) => (prev === "hidden" ? "flex" : "hidden"))
-          }
-          className="md:hidden cursor-pointer"
+          onClick={() => setToggle((prev) => !prev)}
+          className="md:invisible cursor-pointer"
         />
       ) : (
         <TbMenu
           size={"1.5rem"}
-          onClick={() =>
-            setToggle((prev) => (prev === "hidden" ? "flex" : "hidden"))
-          }
-          className="cursor-pointer"
+          onClick={() => setToggle((prev) => !prev)}
+          className={`md:invisible cursor-pointer`}
         />
       )}
     </nav>
