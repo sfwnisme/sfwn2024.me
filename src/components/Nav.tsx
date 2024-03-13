@@ -41,8 +41,9 @@ const Nav = () => {
       </div>
       <ul
         className={`
-        capitalize flex items-center gap-2 max-md:flex-col max-md:items-start max-md:fixed max-md:top-20 max-md:right-1 max-md:bg-gray-50 max-md:shadow-md max-md:min-w-40 max-md:rounded 
-        max-md:${toggle}
+        capitalize items-center gap-2 max-md:flex-col max-md:items-start max-md:fixed max-md:top-20 max-md:right-1 max-md:bg-gray-50 max-md:shadow-md max-md:min-w-40 max-md:rounded 
+        // idden
+        ${toggle}
         p-2
         `}
       >
@@ -54,11 +55,11 @@ const Nav = () => {
       >
         contact
       </button>
-      {toggle === 'block' ? (
+      {toggle === "flex" ? (
         <IoIosClose
           size={"1.5rem"}
           onClick={() =>
-            setToggle((prev) => (prev === "hidden" ? "block" : "hidden"))
+            setToggle((prev) => (prev === "hidden" ? "flex" : "hidden"))
           }
           className="md:hidden cursor-pointer"
         />
@@ -66,9 +67,9 @@ const Nav = () => {
         <TbMenu
           size={"1.5rem"}
           onClick={() =>
-            setToggle((prev) => (prev === "hidden" ? "block" : "hidden"))
+            setToggle((prev) => (prev === "hidden" ? "flex" : "hidden"))
           }
-          className="md:hidden cursor-pointer"
+          className="cursor-pointer"
         />
       )}
     </nav>
