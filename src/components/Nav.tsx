@@ -30,54 +30,56 @@ const Nav = () => {
 
   // console.log(toggle);
   return (
-    <nav className="z-10 flex items-center justify-between gap-2 px-1 py-4 mb-4 sticky top-0 bg-white">
-      <div className="logo h-6 flex-1">
-        <img
-          src="https://res.cloudinary.com/daa68wahe/image/upload/v1700999882/Asset_2_id04vx.png"
-          alt="sfwn.me's logo"
-          className="h-full"
-        />
-      </div>
-      {/* {toggle ? (
+    <nav className="z-50 bg-white/10 backdrop-blur-3xl sticky top-0">
+      <div className="container mx-auto flex items-center justify-between gap-2 px-4 py-4 mb-4">
+        <div className="logo h-6 flex-1">
+          <img
+            src="https://res.cloudinary.com/daa68wahe/image/upload/v1700999882/Asset_2_id04vx.png"
+            alt="sfwn.me's logo"
+            className="h-full"
+          />
+        </div>
+        {/* {toggle ? (
         <ul
           className={`
-        capitalize items-center gap-2 max-md:flex-col max-md:items-start max-md:fixed max-md:top-20 max-md:right-1 max-md:bg-gray-50 max-md:shadow-md max-md:min-w-40 max-md:rounded 
-        p-2
-        md:hidden
-        `}
-        >
+          capitalize items-center gap-2 max-md:flex-col max-md:items-start max-md:fixed max-md:top-20 max-md:right-1 max-md:bg-gray-50 max-md:shadow-md max-md:min-w-40 max-md:rounded 
+          p-2
+          md:hidden
+          `}
+          >
           {navLinks}
-        </ul>
-      ) : undefined}
-      <ul
-        className={`
-        capitalize flex items-center gap-2 
-        p-2
-        max-md:hidden
-        `}
-      >
-        {navLinks}
-      </ul>
-      {toggle ? (
-        <IoMdClose
-          size={"1.5rem"}
+          </ul>
+          ) : undefined}
+          <ul
+          className={`
+          capitalize flex items-center gap-2 
+          p-2
+          max-md:hidden
+          `}
+          >
+          {navLinks}
+          </ul>
+          {toggle ? (
+            <IoMdClose
+            size={"1.5rem"}
           onClick={() => setToggle((prev) => !prev)}
           className="md:invisible cursor-pointer"
-        />
-        ) : (
-        <TbMenu
-        size={"1.5rem"}
-        onClick={() => setToggle((prev) => !prev)}
+          />
+          ) : (
+            <TbMenu
+            size={"1.5rem"}
+            onClick={() => setToggle((prev) => !prev)}
         className={`md:invisible cursor-pointer`}
         />
       )} */}
-      {/* <button
+        {/* <button
         type="button"
         className="bg-black py-1 px-6 text-white rounded-md text-sm hover:bg-gray-200 hover:text-black transition duration-150"
-      >
+        >
         contact
       </button> */}
-      <Btn>Contact</Btn>
+        <Btn>Contact</Btn>
+      </div>
     </nav>
   );
 };

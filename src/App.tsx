@@ -8,14 +8,16 @@ import Work from "./pages/website/home/Work";
 
 const App = () => {
   return (
-    <div className="container mx-auto">
+    <div className="mx-auto">
       <Nav />
-      <Intor />
-      <About />
-      <Contact />
-      <Work />
-      <Techs />
-      <Footer />
+      <div className="container mx-auto">
+        <Intor />
+        <About />
+        <Contact />
+        <Work />
+        <Techs />
+        <Footer />
+      </div>
     </div>
   );
 };
