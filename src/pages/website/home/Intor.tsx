@@ -7,10 +7,10 @@ const Intor = () => {
       <span className="z-0 blur-3xl bg-blue-400/20 h-96 w-96 rounded-full absolute -bottom-24 right-10 -translate-y-1/2"></span>
       <span className="z-0 blur-3xl bg-green-400/20 h-96 w-96 rounded-full absolute bottom-24 right-32 -translate-y-1/2"></span>
       {/* <span className="w-40 h-40 bg-gray-200 rounded-full mb-4"></span> */}
-      <h1 className="z-10 text-5xl sm:text-6xl md:text-7xl text-gray-800 font-normal flex items-end flex-wrap">
+      <h1 className="z-10 text-4xl sm:text-6xl md:text-7xl text-gray-800 font-normal flex items-end flex-wrap">
         Safwan
         <span className="flex items-end">
-          <span className="w-40 h-1 bg-black flex"></span>Mohamed
+          <span className="w-40 h-0.5 bg-black flex"></span>Mohamed
         </span>
       </h1>
       {/* <span className="w-full h-4 bg-gray-200 rounded mb-1"></span> */}
