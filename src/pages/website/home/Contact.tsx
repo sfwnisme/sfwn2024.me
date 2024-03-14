@@ -40,7 +40,7 @@ const Contact = () => {
 
   const linksList = links?.map((link) => (
     // <li className="text-sm w-full p-[5px] bg-gray-50">
-    <li className="text-sm w-fit p-[5px] bg-gray-100 rounded-sm">
+    <li className="text-sm w-fit p-[3px] bg-gray-100 rounded-sm grow">
       <a
         href={link?.href}
         className="group inline-flex items-center justify-between gap-4 hover:bg-gray-200 text-gray-700 p-3 w-full rounded-sm transition duration-200"
@@ -55,23 +55,16 @@ const Contact = () => {
   ));
 
   return (
-    <>
-      <span 
-        className={`z-50 sticky top-[calc(85px+25px)] left-full w-fit flex bg-sky-200 text-sky-600 text-sm py-px px-2`}
-      >
-        Contact
-      </span>
-      <Wrapper title="Contact">
-        <div className="">
-          <p className="mb-8">
-            Have a question or just want to chat? Feel free to email me. Try
-            finding me anywhere else at @saifmohamedsv
-          </p>
-          {/* <ul className="grid grid-col-1 md:grid-cols-2 gap-2">{linksList}</ul> */}
-          <ul className="flex flex-wrap gap-2">{linksList}</ul>
-        </div>
-      </Wrapper>
-    </>
+    <Wrapper title="Contact">
+      <div className="">
+        <p className="mb-8">
+          Have a question or just want to chat? Feel free to email me. Try
+          finding me anywhere else at @saifmohamedsv
+        </p>
+        {/* <ul className="grid grid-col-1 md:grid-cols-2 gap-2">{linksList}</ul> */}
+        <ul className="flex flex-wrap gap-0.5">{linksList}</ul>
+      </div>
+    </Wrapper>
   );
 };
 
