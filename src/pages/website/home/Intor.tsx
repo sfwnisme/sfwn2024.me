@@ -1,6 +1,6 @@
 const Intor = () => {
   return (
-    <div className="min-h-screen grid place-content-center place-items-start">
+    <div className="h-[calc(100svh-85px)] grid place-content-center place-items-start">
       <p className="text-base font-medium bg-red-100 text-red-500 px-2 rounded-sm">
         Safwan Mohamed
       </p>
