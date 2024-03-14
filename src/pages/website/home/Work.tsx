@@ -40,7 +40,7 @@ const Work = () => {
   return (
     <>
       <span
-        className={`z-50 sticky top-[85px] left-[59.5%] w-fit flex bg-red-200 text-red-600 text-sm py-px px-2  `}
+        className={`z-50 sticky top-[calc(85px+25px+25px)] left-full w-fit flex bg-red-200 text-red-600 text-sm py-px px-2  `}
       >
         Work
       </span>

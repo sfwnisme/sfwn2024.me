@@ -4,7 +4,7 @@ const Intor = () => {
       <p className="text-base font-medium bg-red-100 text-red-500 px-2 rounded-sm">
         Safwan Mohamed
       </p>
-      <h1 className="text-5xl sm:text-6xl md:text-8xl  font-black">
+      <h1 className="text-5xl sm:text-6xl md:text-7xl font-black">
         Frontend ___Developer
       </h1>
     </div>

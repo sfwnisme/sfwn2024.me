@@ -57,7 +57,7 @@ const Contact = () => {
   return (
     <>
       <span 
-        className={`z-50 sticky top-[85px] left-[65%] w-fit flex bg-sky-200 text-sky-600 text-sm py-px px-2`}
+        className={`z-50 sticky top-[calc(85px+25px)] left-full w-fit flex bg-sky-200 text-sky-600 text-sm py-px px-2`}
       >
         Contact
       </span>
