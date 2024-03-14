@@ -9,8 +9,8 @@
 }
 
 .btn-23 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
+  /* -webkit-tap-highlight-color: transparent; */
+  /* -webkit-appearance: button; */
   background-color: #000;
   background-image: none;
   color: #fff;

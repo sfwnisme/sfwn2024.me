@@ -1,10 +1,13 @@
 const Footer = () => {
   const year: number = new Date().getFullYear();
   return (
-    <footer className="text-black font-light relative flex items-center justify-center p-5">
+    <footer className="text-black font-normal relative flex items-center justify-center p-5">
       <span className="year block text-xs text-gray-500">
-        &copy;{year} | All Rights Reserved{" "}
-        <a className="text-red-500" href="https://github.com/sfwnisme">
+        &copy;{year} | All Rights Reserved {""}
+        <a
+          className="text-red-500 font-medium hover:underline"
+          href="https://github.com/sfwnisme"
+        >
           SFWN
         </a>
       </span>

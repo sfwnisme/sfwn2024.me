@@ -1,63 +1,78 @@
 import React from "react";
 import Wrapper from "../../../components/Wrapper";
-import {} from "react-icons";
+import { IconType } from "react-icons";
 import {
-  AiOutlineFacebook,
-  AiOutlineGithub,
-  AiOutlineLinkedin,
-  AiOutlineMail,
+  AiFillFacebook,
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillMail,
 } from "react-icons/ai";
 import { MdArrowOutward } from "react-icons/md";
 
+interface LinksTypes {
+  title: string;
+  href: string;
+  icon: IconType;
+}
+
 const Contact = () => {
-  const links = [
+  const links: LinksTypes[] = [
     {
       title: "email",
       href: "mailto:safwan@sfwn.me",
-      icon: AiOutlineMail,
+      icon: AiFillMail,
     },
     {
       title: "github",
       href: "mailto:safwan@sfwn.me",
-      icon: AiOutlineGithub,
+      icon: AiFillGithub,
     },
     {
       title: "linkedin",
       href: "mailto:safwan@sfwn.me",
-      icon: AiOutlineLinkedin,
+      icon: AiFillLinkedin,
     },
     {
       title: "facebook",
       href: "mailto:safwan@sfwn.me",
-      icon: AiOutlineFacebook,
+      icon: AiFillFacebook,
     },
   ];
 
   const linksList = links?.map((link) => (
-    <li className="text-base w-full p-[5px] bg-gray-50">
+    // <li className="text-sm w-full p-[5px] bg-gray-50">
+    <li className="text-sm w-fit p-[5px] bg-gray-100 rounded-sm">
       <a
         href={link?.href}
-        className="inline-flex justify-between hover:bg-gray-100 text-gray-700 p-3 w-full rounded transition duration-200"
+        className="group inline-flex items-center justify-between gap-4 hover:bg-gray-200 text-gray-700 p-3 w-full rounded-sm transition duration-200"
       >
         <div className="flex gap-2 flex-1">
-          {React.createElement(link?.icon, { size: "1.5rem" })}
+          {/* {React.createElement(link?.icon, { size: "1.5rem" })} */}
           {link?.title}
         </div>
-        <MdArrowOutward />
+        <MdArrowOutward className="font-bold transform group-hover:rotate-[45deg] group-hover:scale-125 duration-200 " />
       </a>
     </li>
   ));
 
   return (
-    <Wrapper title="Contact">
-      <div className="">
-        <p className="mb-8">
-          Have a question or just want to chat? Feel free to email me. Try
-          finding me anywhere else at @saifmohamedsv
-        </p>
-        <ul className="grid grid-cols-2 gap-2">{linksList}</ul>
-      </div>
-    </Wrapper>
+    <>
+      <span 
+        className={`z-50 sticky top-[85px] left-[65%] w-fit flex bg-sky-200 text-sky-600 text-sm py-px px-2`}
+      >
+        Contact
+      </span>
+      <Wrapper title="Contact">
+        <div className="">
+          <p className="mb-8">
+            Have a question or just want to chat? Feel free to email me. Try
+            finding me anywhere else at @saifmohamedsv
+          </p>
+          {/* <ul className="grid grid-col-1 md:grid-cols-2 gap-2">{linksList}</ul> */}
+          <ul className="flex flex-wrap gap-2">{linksList}</ul>
+        </div>
+      </Wrapper>
+    </>
   );
 };
 

@@ -17,6 +17,9 @@ module.exports = {
           // xl: '1280px',
           // '2xl': '1536px'
         },
+      },
+      gridTemplateColumns: {
+        '12fr': '1fr 3fr'
       }
     },
   },

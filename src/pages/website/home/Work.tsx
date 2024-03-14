@@ -38,17 +38,26 @@ const Work = () => {
   ));
 
   return (
-    <Wrapper title="Work">
-      <div className="flex flex-col gap-4 mb-8">
-        <p>3+ years of professional development experience.</p>
-        <p>
-          I started my career , which I will always be appreciative of. Then I
-          worked at a few small local companies. Now I'm a full stack frontend
-          engineer currently working at None
-        </p>
-      </div>
-      <div className="grid grid-cols-1 gap-6 items-center">{projectsList}</div>
-    </Wrapper>
+    <>
+      <span
+        className={`z-50 sticky top-[85px] left-[59.5%] w-fit flex bg-red-200 text-red-600 text-sm py-px px-2  `}
+      >
+        Work
+      </span>
+      <Wrapper title="Work">
+        <div className="flex flex-col gap-4 mb-8">
+          <p>3+ years of professional development experience.</p>
+          <p>
+            I started my career , which I will always be appreciative of. Then I
+            worked at a few small local companies. Now I'm a full stack frontend
+            engineer currently working at None
+          </p>
+        </div>
+        <div className="grid grid-cols-1 gap-6 items-center">
+          {projectsList}
+        </div>
+      </Wrapper>
+    </>
   );
 };
 
