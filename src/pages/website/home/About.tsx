@@ -11,7 +11,9 @@ const About = () => {
   console.log(info);
   return (
     <Wrapper title="About">
-      <div className="flex flex-col items-start justify-start gap-4 max-sm:gap-2">
+      <div className="flex flex-col items-start justify-start gap-4 max-sm:gap-2"
+        data-aos="fade-up"
+        >
         <p className="capitalize">
           {first_name} {last_name} {job} and {sub_job}
         </p>

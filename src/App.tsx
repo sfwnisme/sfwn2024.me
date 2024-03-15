@@ -6,12 +6,17 @@ import Footer from "./pages/website/home/Footer";
 import Intor from "./pages/website/home/Intor";
 import Techs from "./pages/website/home/Techs";
 import Work from "./pages/website/home/Work";
-import AOS from 'aos';
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 const App = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      offset: 200,
+      duration: 300,
+      easing: "ease-in-sine",
+      delay: 200,
+    });
   }, []);
 
   return (

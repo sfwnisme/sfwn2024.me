@@ -55,7 +55,9 @@ const Contact = () => {
 
   return (
     <Wrapper title="Contact">
-      <div className="">
+      <div className=""
+        data-aos="fade-up"
+        >
         <p className="mb-8">
           Have a question or just want to chat? Feel free to email me. Try
           finding me anywhere else at @saifmohamedsv
