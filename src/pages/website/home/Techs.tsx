@@ -30,11 +30,11 @@ const Techs = () => {
 
   const main = mainTechs?.map((tech) => (
     // <li className="text-sm w-full p-[5px] bg-gray-50">
-    <li className="text-sm w-fit p-[2px] bg-gray-100 rounded-sm cursor-pointer grow">
+    <li className="text-sm w-fit p-[2px] bg-gray-50 rounded-sm cursor-pointer grow">
       {/* className="group inline-flex items-center justify-between gap-4 hover:bg-gray-200 text-gray-700 p-3 w-full rounded-sm transition duration-200" */}
       <div
         className="flex gap-2 flex-1
-      hover:bg-gray-200 text-[13px] text-gray-700
+      hover:bg-gray-100 text-[13px] text-gray-700
        p-1 w-full rounded-sm transition duration-200
       "
       >
@@ -46,11 +46,11 @@ const Techs = () => {
 
   const helper = helperTechsAndLibs?.map((tech) => (
     // <li className="text-sm w-full p-[5px] bg-gray-50">
-    <li className="text-sm w-fit p-[2px] bg-gray-100 rounded-sm cursor-pointer grow">
+    <li className="text-sm w-fit p-[2px] bg-gray-50 rounded-sm cursor-pointer grow">
       {/* className="group inline-flex items-center justify-between gap-4 hover:bg-gray-200 text-gray-700 p-3 w-full rounded-sm transition duration-200" */}
       <div
         className="flex gap-2 flex-1
-      hover:bg-gray-200 text-[13px] text-gray-700
+      hover:bg-gray-100 text-[13px] text-gray-700
        p-1 w-full rounded-sm transition duration-200
       "
       >

@@ -39,11 +39,10 @@ const Contact = () => {
   ];
 
   const linksList = links?.map((link) => (
-    // <li className="text-sm w-full p-[5px] bg-gray-50">
-    <li className="text-sm w-fit p-[3px] bg-gray-100 rounded-sm grow">
+    <li className="text-sm w-fit py-[3px] bg-gray-100 rounded-sm grow">
       <a
         href={link?.href}
-        className="group inline-flex items-center justify-between gap-4 hover:bg-gray-200 text-gray-700 p-3 w-full rounded-sm transition duration-200"
+        className="group inline-flex items-center justify-between gap-4 hover:bg-gray-200 text-gray-700 px-3 py-2 w-full rounded-sm transition duration-200"
       >
         <div className="flex gap-2 flex-1">
           {/* {React.createElement(link?.icon, { size: "1.5rem" })} */}
