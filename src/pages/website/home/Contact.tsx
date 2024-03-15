@@ -39,7 +39,7 @@ const Contact = () => {
   ];
 
   const linksList = links?.map((link) => (
-    <li className="text-sm w-fit py-[3px] bg-gray-100 rounded-sm grow">
+    <li className="relative text-sm w-fit p-[3px] bg-gray-100 rounded-sm grow overflow-clip">
       <a
         href={link?.href}
         className="group inline-flex items-center justify-between gap-4 hover:bg-gray-200 text-gray-700 px-3 py-2 w-full rounded-sm transition duration-200"
@@ -55,9 +55,7 @@ const Contact = () => {
 
   return (
     <Wrapper title="Contact">
-      <div className=""
-        data-aos="fade-up"
-        >
+      <div className="" data-aos="fade-up">
         <p className="mb-8">
           Have a question or just want to chat? Feel free to email me. Try
           finding me anywhere else at @saifmohamedsv

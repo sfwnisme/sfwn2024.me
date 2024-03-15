@@ -23,7 +23,16 @@ const App = () => {
     <div className="mx-auto">
       <Nav />
       <div className="container mx-auto">
+        <div
+          className="z-[2] h-screen w-screen fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
+          style={{
+            backgroundImage: "url(./bg-gradient.png)",
+            opacity: "0.12",
+            pointerEvents: "none",
+          }}
+        ></div>
         <Intor />
+
         <About />
         <Contact />
         <Work />

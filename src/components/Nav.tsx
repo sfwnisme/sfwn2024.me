@@ -30,7 +30,7 @@ const Nav = () => {
 
   // console.log(toggle);
   return (
-    <nav className="z-50 bg-white/10 backdrop-blur-3xl sticky top-0">
+    <nav className="z-50 sticky top-0">
       <div className="container mx-auto flex items-center justify-between gap-2 px-4 py-4 mb-4">
         <div className="logo h-6 flex-1">
           <img

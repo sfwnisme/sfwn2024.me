@@ -6,7 +6,16 @@ interface Props {
 const Btn = (props: Props) => {
   const { children } = props;
   return (
-    <button className="cssbuttons-io-button">
+    <button
+      type="button"
+      className="cssbuttons-io-button"
+      style={{
+        backgroundImage: "url(./bg-gradient.png)",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="absolute z-0 top-0 left-0 w-full h-full"></div>
       {children}
       <div className="icon">
         <svg
