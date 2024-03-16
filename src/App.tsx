@@ -7,7 +7,7 @@ import Intor from "./pages/website/home/Intor";
 import FrontendSkills from "./pages/website/home/FrontendSkills";
 import Work from "./pages/website/home/Work";
 import AOS from "aos";
-// import "aos/dist/aos.css";
+import "aos/dist/aos.css";
 import Loader from "./components/Loader";
 import MarketingSkills from "./pages/website/home/MarketingSkills";
 
