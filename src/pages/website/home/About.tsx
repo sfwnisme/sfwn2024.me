@@ -2,6 +2,8 @@ import Wrapper from "../../../components/Wrapper";
 import useDataSrc from "../../../hooks/useDataSrc";
 
 const About = () => {
+  const year = new Date().getFullYear() - 2021;
+  console.log(year);
   const { info } = useDataSrc();
   const {
     name: { first_name, last_name },
@@ -11,23 +13,23 @@ const About = () => {
   console.log(info);
   return (
     <Wrapper title="About">
-      <div className="flex flex-col items-start justify-start gap-4 max-sm:gap-2"
+      <div
+        className="flex flex-col items-start justify-start gap-4 max-sm:gap-2"
         data-aos="fade-up"
-        >
-        <p className="capitalize">
-          {first_name} {last_name} {job} and {sub_job}
+      >
+        <p className="capitalize">Safwan Mohamde,</p>
+        <p>
+          I got my passion with web development and providing marketing services
+          for startups helping them pass in the right path
         </p>
         <p>
-          I have a passion for design and am always looking for ways to
-          incorporate it into my engineering work.
+          Currently, I'm working as Marketing Team Leader for severel e-commerce
+          in KSA.
         </p>
         <p>
-          In addition to coding, I also mentor junior developers to be better
-          and be job-ready at my Discord server
-        </p>
-        <p>
-          When I'm not at my desk I am probably doing martial arts, watching
-          movies, or at a coffee shop :)
+          Frontend development got the most of my interest, thus I'm scaling
+          that for {""}
+          {year} till now
         </p>
       </div>
     </Wrapper>

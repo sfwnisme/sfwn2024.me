@@ -4,10 +4,12 @@ import About from "./pages/website/home/About";
 import Contact from "./pages/website/home/Contact";
 import Footer from "./pages/website/home/Footer";
 import Intor from "./pages/website/home/Intor";
-import Techs from "./pages/website/home/Techs";
+import FrontendSkills from "./pages/website/home/FrontendSkills";
 import Work from "./pages/website/home/Work";
 import AOS from "aos";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
+import Loader from "./components/Loader";
+import MarketingSkills from "./pages/website/home/MarketingSkills";
 
 const App = () => {
   useEffect(() => {
@@ -23,21 +25,14 @@ const App = () => {
     <div className="mx-auto">
       <Nav />
       <div className="container mx-auto">
-        {/* <div
-          className="z-[2] h-screen w-screen fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
-          style={{
-            backgroundImage: "url(./bg-gradient.png)",
-            opacity: "0.12",
-            pointerEvents: "none",
-          }}
-        ></div> */}
         <Intor />
-
         <About />
         <Contact />
         <Work />
-        <Techs />
+        <FrontendSkills />
+        <MarketingSkills />
         <Footer />
+        <Loader />
       </div>
     </div>
   );

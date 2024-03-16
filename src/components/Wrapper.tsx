@@ -22,7 +22,7 @@ const Wrapper = (props: Props) => {
 
   return (
     <div
-      id={title.toLowerCase()}
+      id={title?.toLowerCase()}
       className="WRAPPER z-0 h-[calc(100vh-85px)] md:px-1 flex items-center justify-center
        bg-white sticky top-[85px] transition 
        duration-700"

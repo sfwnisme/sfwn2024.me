@@ -6,11 +6,11 @@ interface Props {
 const Btn = (props: Props) => {
   const { children } = props;
   return (
-    <button
-      type="button"
+    <a
+      href="mailto:safwan@sfwn.me"
       className="cssbuttons-io-button"
       style={{
-        backgroundImage: "url(./bg-gradient.png)",
+        backgroundImage: "url(./bg-gradient1.png)",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
@@ -31,7 +31,7 @@ const Btn = (props: Props) => {
           ></path>
         </svg>
       </div>
-    </button>
+    </a>
   );
 };
 
