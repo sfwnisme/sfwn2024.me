@@ -7,7 +7,7 @@ const Loader = () => {
     const random: number = Math.floor(Math.random() * delays.length);
     const delay: number = delays[random];
     console.log(random);
-    const timer = setTimeout(() => setLoader(false), [delay]);
+    const timer = setTimeout(() => setLoader(false), delay);
     return () => clearTimeout(timer);
   }, []);
   return (

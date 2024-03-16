@@ -1,16 +1,8 @@
 import Wrapper from "../../../components/Wrapper";
-import useDataSrc from "../../../hooks/useDataSrc";
 
 const About = () => {
   const year = new Date().getFullYear() - 2021;
   console.log(year);
-  const { info } = useDataSrc();
-  const {
-    name: { first_name, last_name },
-    job,
-    sub_job,
-  } = info;
-  console.log(info);
   return (
     <Wrapper title="About">
       <div
