@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import "./Loader.css";
+import { DELAY } from "../utils/utils";
 const Loader = () => {
   const [loader, setLoader] = useState(true);
   useEffect(() => {
-    const delays: number[] = [500, 1000, 1500, 2000];
-    const random: number = Math.floor(Math.random() * delays.length);
-    const delay: number = delays[random];
-    console.log(random);
-    const timer = setTimeout(() => setLoader(false), delay);
-    return () => clearTimeout(timer);
+    // const delays: number[] = [500, 1000, 1500, 2000];
+    // const random: number = Math.floor(Math.random() * delays.length);
+    // const delay: number = delays[random];
+    // console.log(random);
+    // const timer = setTimeout(() => setLoader(false), delay);
+    // return () => clearTimeout(timer);
+    DELAY(setLoader);
   }, []);
   return (
     <>
