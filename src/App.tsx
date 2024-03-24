@@ -15,7 +15,7 @@ import Btn01 from "./components/Btn01";
 const App = () => {
   useEffect(() => {
     AOS.init({
-      offset: 200,
+      offset: 0,
       duration: 200,
       easing: "ease-in-sine",
       delay: 0,
