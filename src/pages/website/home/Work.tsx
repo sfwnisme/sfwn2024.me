@@ -64,7 +64,7 @@ const Work = () => {
   ];
 
   const projectsList = company?.map((co) => (
-    <div className="p-2 rounded bg-gray-50/50">
+    <div className="p-2 rounded border border-gray-50">
       <div className="flex items-start justify-between gap-4 text-sm mb-2">
         <div className="bg-white md:h-14 h-12 md:w-14 w-12 grid place-items-center place-content-center border rounded-full p-3">
           {co?.icon ? (
