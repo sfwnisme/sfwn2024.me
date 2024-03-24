@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Wrapper from "../../../components/Wrapper";
+import { DELAY } from "../../../utils/utils";
+import { useDelay } from "../../../utils/useDelay";
 
 const MarketingSkills = () => {
+  const [show, setShow] = useState(false);
+
   const mainTechs: string[] = [
     "Online Advertisement",
     "(SEO) Search Engine Optemization",
@@ -13,23 +17,16 @@ const MarketingSkills = () => {
     "Automate stereotype tasks",
     "Team management",
   ];
-  // const helperTechsAndLibs: string[] = [
-  //   "React Router Dom",
-  //   "React Query",
-  //   "React Hook From",
-  //   "React Toastify",
-  //   "Axios",
-  //   "yup",
-  //   "React Skeleton",
-  //   "Tailwind",
-  //   "flowbite",
-  //   "bootstrap",
-  //   "figma",
-  // ];
 
+  const showLimit = (data: string[]) => (show ? data : data?.slice(0, 6));
+
+  // !NOTE: you can add show more and show less for the more thant 6 skill or what ever number you prefere
   const list: (data: string[]) => React.ReactNode = (data) =>
     data?.map((item) => (
-      <li className="text-sm w-fit p-[2px] bg-gray-50 rounded-sm cursor-pointer grow">
+      <li
+        key={item}
+        className="text-sm w-fit p-[2px] bg-gray-50 rounded-sm cursor-pointer grow"
+      >
         <div
           className="flex gap-2 flex-1
       hover:bg-gray-100 text-[13px] text-gray-700
@@ -48,7 +45,16 @@ const MarketingSkills = () => {
           Over 5 years of professional experience I'm glad to have these skills
           and capabilites
         </p>
-        <ul className="flex flex-wrap gap-0.5 mb-6">{list(mainTechs)}</ul>
+        <ul className="flex flex-wrap gap-0.5 mb-2">
+          {list(showLimit(mainTechs))}
+        </ul>
+        <button
+          type="button"
+          onClick={() => setShow((prev) => !prev)}
+          className="text-xs text-gray-500 underline "
+        >
+          {show ? "show less" : "show more"}
+        </button>
       </div>
     </Wrapper>
   );

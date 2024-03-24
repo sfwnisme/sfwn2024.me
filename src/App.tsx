@@ -10,14 +10,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Loader from "./components/Loader";
 import MarketingSkills from "./pages/website/home/MarketingSkills";
+import Btn01 from "./components/Btn01";
 
 const App = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 300,
+      duration: 200,
       easing: "ease-in-sine",
-      delay: 200,
+      delay: 0,
     });
   }, []);
 
@@ -34,6 +35,7 @@ const App = () => {
         <Footer />
         <Loader />
       </div>
+      <Btn01 />
     </div>
   );
 };
