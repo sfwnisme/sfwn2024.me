@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Wrapper from "../../../components/Wrapper";
-import { DELAY } from "../../../utils/utils";
-import { useDelay } from "../../../utils/useDelay";
 
 const MarketingSkills = () => {
   const [show, setShow] = useState(false);
