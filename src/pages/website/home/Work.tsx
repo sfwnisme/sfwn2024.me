@@ -52,6 +52,13 @@ const Work = () => {
           company: "Cheveu Solutions",
           year: "2023/feb - present",
         },
+        {
+          icon: "./4cs.png",
+          title: "Marketing Team Leader, IT",
+          href: "https://cheveu-solutions.com/",
+          company: "4C's jewelry",
+          year: "2023/feb - present",
+        },
       ],
     },
     {

@@ -27,7 +27,7 @@ const Btn01 = () => {
         <button
           type="button"
           title="go up"
-          className={`z-50 fixed bottom-4 right-4 p-1 border-2 text-gray-700 border-gray-400 rounded hover:bg-gray-100 trnasition duration-150 ${showUp}`}
+          className={`z-50 fixed bottom-4 right-4 p-1 border text-gray-700 border-gray-400 rounded hover:bg-gray-100 trnasition duration-150 ${showUp}`}
           onClick={() => setUp((prev) => ++prev)}
         >
           <BiUpArrow />

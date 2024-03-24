@@ -46,7 +46,7 @@ const Contact = () => {
   const linksList = links?.map((link) => (
     <>
       {link?.disable ? null : (
-        <li className="relative text-sm w-fit p-[3px] bg-gray-50 rounded-sm grow overflow-clip capitalize">
+        <li className="relative text-xs w-fit p-[3px] bg-gray-50 rounded-sm grow overflow-clip capitalize">
           <a
             href={link?.href}
             target="_blank"
