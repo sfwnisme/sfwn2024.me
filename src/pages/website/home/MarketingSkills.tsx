@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Wrapper from "../../../components/Wrapper";
+import NamesList from "../../../components/NamesList";
 
 const MarketingSkills = () => {
   const [show, setShow] = useState(false);
@@ -20,21 +21,7 @@ const MarketingSkills = () => {
 
   // !NOTE: you can add show more and show less for the more thant 6 skill or what ever number you prefere
   const list: (data: string[]) => React.ReactNode = (data) =>
-    data?.map((item) => (
-      <li
-        key={item}
-        className="text-sm w-fit p-[2px] bg-gray-50 rounded-sm cursor-pointer grow"
-      >
-        <div
-          className="flex gap-2 flex-1
-      hover:bg-gray-100 text-[13px] text-gray-700
-       p-1 w-full rounded-sm transition duration-200
-      "
-        >
-          {item}
-        </div>
-      </li>
-    ));
+    data?.map((item) => <NamesList>{item}</NamesList>);
 
   return (
     <Wrapper title="Marketing Skills">
