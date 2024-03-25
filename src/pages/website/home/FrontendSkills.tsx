@@ -31,7 +31,7 @@ const FrontendSkills = () => {
 
   const list: (data: string[]) => React.ReactNode = (data) =>
     data?.map((item) => (
-      <li className="text-sm w-fit p-[2px] bg-gray-50 rounded-sm cursor-pointer grow">
+      <li className="text-sm w-fit p-[2px] bg-gray-50 rounded-sm cursor-pointer grow border border-gray-50 border-dashed">
         <div
           className="flex gap-2 flex-1
       hover:bg-gray-100 text-[13px] text-gray-700

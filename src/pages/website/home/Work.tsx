@@ -59,6 +59,13 @@ const Work = () => {
           company: "4C's jewelry",
           year: "2023/feb - present",
         },
+        {
+          icon: "./aurora.avif",
+          title: "Marketing Team Leader, IT",
+          href: "https://auroraksa.com/",
+          company: "Aurora",
+          year: "2023/feb - present",
+        },
       ],
     },
     {
@@ -73,7 +80,7 @@ const Work = () => {
   const projectsList = company?.map((co) => (
     <div className="p-2 rounded border border-dashed border-gray-100">
       <div className="flex items-start justify-between gap-4 text-sm mb-2">
-        <div className="bg-white md:h-14 h-12 md:w-14 w-12 grid place-items-center place-content-center border rounded-full p-3">
+        <div className="bg-white md:h-12 h-12 md:w-12 w-12 grid place-items-center place-content-center border rounded-full p-3">
           {co?.icon ? (
             <img src={co?.icon} alt={co?.title} className="w-full" />
           ) : null}
@@ -97,7 +104,7 @@ const Work = () => {
           <div className="flex flex-wrap gap-1">
             {co?.sub_jobs?.map((sub, idx) => (
               <div
-                className="flex items-start justify-between gap-3 text-sm ml-4"
+                className="flex items-start justify-between gap-2 text-sm ml-4"
                 key={idx}
               >
                 <div className="bg-white md:h-8 h-8 md:w-8 w-8 grid place-items-center place-content-center border rounded p-1">
