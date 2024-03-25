@@ -1,5 +1,4 @@
 import { useEffect, useLayoutEffect, useState } from "react";
-import { BiUpArrow } from "react-icons/bi";
 
 const Btn01 = () => {
   const [up, setUp] = useState(1);

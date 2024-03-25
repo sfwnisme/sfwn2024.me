@@ -1,4 +1,10 @@
-const NamesList = ({ children }) => {
+import React from "react";
+
+interface Props {
+  children: string;
+}
+const NamesList = (props: Props) => {
+  const { children } = props;
   return (
     <li
       key={children}
