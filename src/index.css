@@ -11,6 +11,20 @@ body {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  background: rgba(255, 255, 0, 0);
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orangered;
+  border-radius: 1.2px;
+  -webkit-border-radius: 1.2px;
+  -moz-border-radius: 1.2px;
+  -ms-border-radius: 1.2px;
+  -o-border-radius: 1.2px;
+}
+
 html,
 body,
 * {

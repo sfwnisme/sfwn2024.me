@@ -8,12 +8,7 @@ const Btn = (props: Props) => {
   return (
     <a
       href="mailto:safwan@sfwn.me"
-      className="cssbuttons-io-button"
-      style={{
-        backgroundImage: "url(./bg-gradient1.png)",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
+      className="cssbuttons-io-button bg-red-500"
     >
       <div className="absolute z-0 top-0 left-0 w-full h-full"></div>
       {children}

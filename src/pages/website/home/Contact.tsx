@@ -6,6 +6,7 @@ import {
   AiFillLinkedin,
   AiFillMail,
 } from "react-icons/ai";
+import { BsDiscord } from "react-icons/bs";
 import { MdArrowOutward } from "react-icons/md";
 
 interface LinksTypes {
@@ -41,12 +42,18 @@ const Contact = () => {
       icon: AiFillFacebook,
       disable: true,
     },
+    {
+      title: "discord",
+      href: "https://discordapp.com/users/695376305914642542",
+      icon: BsDiscord,
+      disable: false,
+    },
   ];
 
   const linksList = links?.map((link) => (
     <>
       {link?.disable ? null : (
-        <li className="relative text-xs w-fit p-[3px] bg-gray-50 rounded-sm grow overflow-clip capitalize">
+        <li className="relative text-sm w-fit p-[3px] bg-gray-0 rounded-sm border border-gray-300 border-dashed grow overflow-clip capitalize">
           <a
             href={link?.href}
             target="_blank"
