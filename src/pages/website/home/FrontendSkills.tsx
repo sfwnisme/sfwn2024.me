@@ -40,11 +40,9 @@ const FrontendSkills = () => {
           I'm using these common Liblaries and technologies helping me develop
           web frontend projects and features.
         </p>
-        <h1 className="mb-2 underline text-sm text-gray-500">Main Techs:</h1>
+        <h1 className="mb-2 text-sm text-gray-500">Main Techs:</h1>
         <ul className="flex flex-wrap gap-0.5 mb-6">{list(mainTechs)}</ul>
-        <h1 className="mb-2 underline text-sm text-gray-500">
-          Helper Techs and Libs:
-        </h1>
+        <h1 className="mb-2 text-sm text-gray-500">Helper Techs and Libs:</h1>
         <ul className="flex flex-wrap gap-0.5 mb-6">
           {list(helperTechsAndLibs)}
         </ul>

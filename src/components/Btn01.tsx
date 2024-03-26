@@ -1,4 +1,5 @@
 import { useEffect, useLayoutEffect, useState } from "react";
+import { SlArrowUp } from "react-icons/sl";
 
 const Btn01 = () => {
   const [up, setUp] = useState(1);
@@ -18,19 +19,22 @@ const Btn01 = () => {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  console.log(showUp);
-
   return (
     <>
       {showUp ? (
         <button
           type="button"
           title="go up"
-          className={`z-50 fixed bottom-4 right-4 p-1 border text-gray-700 border-gray-400 rounded bg-white hover:bg-gray-100 trnasition duration-150 ${showUp}`}
+          className={`z-50 fixed bottom-8 right-4 p-px text-gray-700 hover:text-white border border-gray-200 hover:border-red-300 border-dashed rounded bg-white hover:bg-gray-100 trnasition duration-150 ${showUp}`}
           onClick={() => setUp((prev) => ++prev)}
         >
-          {/* <BiUpArrow /> */}
-          UP
+          <div className="p-[2px] m-px hover:bg-red-500 rounded-sm">
+            <SlArrowUp className="bg-white rounded-sm text-red-500 p-px" />
+            {/* <div className="flex flex-col gap-[-10px]"> */}
+            <p>U</p>
+            <p>P</p>
+            {/* </div> */}
+          </div>
         </button>
       ) : null}
     </>

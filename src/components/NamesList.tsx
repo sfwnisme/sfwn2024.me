@@ -8,12 +8,10 @@ const NamesList = (props: Props) => {
   return (
     <li
       key={children}
-      className="text-sm w-fit p-[2px] bg-white rounded-sm cursor-pointer grow border border-gray-100"
+      className="text-sm w-fit p-[2px] bg-white rounded-sm cursor-pointer grow border border-gray-100 hover:border-red-200"
     >
       <div
-        className="flex gap-2 flex-1
-hover:bg-gray-50 text-[13px] text-gray-700
- p-1 w-full rounded-sm transition duration-200
+        className="flex gap-2 flex-1 hover:bg-red-500 text-[13px] text-gray-700 hover:text-white p-1 w-full rounded-sm transition duration-200
 "
       >
         {children}
