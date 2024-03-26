@@ -9,7 +9,7 @@ import { VscGithubAlt } from "react-icons/vsc";
 interface LinksTypes {
   title: string;
   href: string;
-  icon?: IconType;
+  icon: IconType;
   disable?: boolean;
 }
 
