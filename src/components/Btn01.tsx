@@ -6,7 +6,6 @@ const Btn01 = () => {
   const [showUp, setShowUp] = useState("invisible");
 
   useLayoutEffect(() => window.scrollTo({ top: 0, behavior: "smooth" }), [up]);
-  console.log(up);
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY > 500) {
@@ -30,10 +29,6 @@ const Btn01 = () => {
         >
           <div className="p-[2px] m-px hover:bg-red-500 rounded-sm">
             <SlArrowUp className="bg-white rounded-sm text-red-500 p-px" />
-            {/* <div className="flex flex-col gap-[-10px]"> */}
-            <p>U</p>
-            <p>P</p>
-            {/* </div> */}
           </div>
         </button>
       ) : null}
