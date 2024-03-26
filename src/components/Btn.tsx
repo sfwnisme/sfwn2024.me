@@ -6,10 +6,7 @@ interface Props {
 const Btn = (props: Props) => {
   const { children } = props;
   return (
-    <a
-      href="mailto:safwan@sfwn.me"
-      className="cssbuttons-io-button bg-red-500"
-    >
+    <a href="mailto:safwan@sfwn.me" className="cssbuttons-io-button bg-red-500">
       <div className="absolute z-0 top-0 left-0 w-full h-full"></div>
       {children}
       <div className="icon">

@@ -78,8 +78,8 @@ const Work = () => {
   ];
 
   const projectsList = company?.map((co) => (
-    <div className="p-2 rounded border border-dashed border-gray-100">
-      <div className="flex items-start justify-between gap-4 text-sm mb-2">
+    <div className="p-2 rounded border border-gray-200 hover:border-red-500">
+      <div className="flex items-start justify-between gap-4 text-sm">
         <div className="bg-white md:h-12 h-12 md:w-12 w-12 grid place-items-center place-content-center border rounded-full p-3">
           {co?.icon ? (
             <img src={co?.icon} alt={co?.title} className="w-full" />
@@ -100,11 +100,10 @@ const Work = () => {
       </div>
       {co?.sub_jobs ? (
         <>
-          <hr className="w-full border-1 border-gray-100 mb-2 mt-2" />
-          <div className="flex flex-wrap gap-1">
+          <div className="flex flex-wrap gap-1 border border-gray-200 hover:border-red-300 p-2 ml-4 mt-2 rounded-sm cursor-pointer">
             {co?.sub_jobs?.map((sub, idx) => (
               <div
-                className="flex items-start justify-between gap-2 text-sm ml-4"
+                className="flex items-start justify-between gap-2 text-sm"
                 key={idx}
               >
                 <div className="bg-white md:h-8 h-8 md:w-8 w-8 grid place-items-center place-content-center border rounded p-1">
