@@ -5,6 +5,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { CiFacebook, CiLinkedin, CiMail } from "react-icons/ci";
 import { PiDiscordLogoThin } from "react-icons/pi";
 import { VscGithubAlt } from "react-icons/vsc";
+import NamesList from "../../../components/NamesList";
 
 interface LinksTypes {
   title: string;
@@ -47,22 +48,42 @@ const Contact = () => {
     },
   ];
 
+  // const linksList = links?.map((link) => (
+  //   <>
+  //     {link?.disable ? null : (
+  //       <li className="relative text-sm w-fit p-[3px] bg-gray-0 rounded-sm border border-gray-200 hover:border-red-200 borde grow overflow-clip capitalize">
+  //         <a
+  //           href={link?.href}
+  //           target="_blank"
+  //           className="group inline-flex items-center justify-between gap-4 hover:bg-red-500 text-gray-700 hover:text-white px-3 py-2 w-full rounded-sm transition duration-200"
+  //         >
+  //           <div className="flex gap-2 flex-1 items-center">
+  //             {React.createElement(link?.icon, { size: "1.5rem" })}
+  //             {link?.title}
+  //           </div>
+  //           <MdArrowOutward className="font-bold transform group-hover:rotate-[45deg] group-hover:scale-125 duration-200 " />
+  //         </a>
+  //       </li>
+  //     )}
+  //   </>
+  // ));
+
   const linksList = links?.map((link) => (
     <>
       {link?.disable ? null : (
-        <li className="relative text-sm w-fit p-[3px] bg-gray-0 rounded-sm border border-gray-200 hover:border-red-200 borde grow overflow-clip capitalize">
+        <NamesList>
           <a
             href={link?.href}
             target="_blank"
-            className="group inline-flex items-center justify-between gap-4 hover:bg-red-500 text-gray-700 hover:text-white px-3 py-2 w-full rounded-sm transition duration-200"
+            className="group inline-flex items-center justify-between gap-4 px-3 py-2 w-full rounded-sm transition duration-200"
           >
-            <div className="flex gap-2 flex-1">
+            <div className="flex gap-2 flex-1 items-center">
               {React.createElement(link?.icon, { size: "1.5rem" })}
               {link?.title}
             </div>
             <MdArrowOutward className="font-bold transform group-hover:rotate-[45deg] group-hover:scale-125 duration-200 " />
           </a>
-        </li>
+        </NamesList>
       )}
     </>
   ));

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Wrapper from "../../../components/Wrapper";
 
 const Work = () => {
@@ -76,6 +76,18 @@ const Work = () => {
       year: "2021/aug - 2023/feb",
     },
   ];
+
+  useEffect(() => {
+    // const timer = setTimeout(
+    // () =>
+    // const wrapper = document.querySelector(".WRAPPER");
+    // console.log((200 * wrapper.getBoundingClientRect()?.height) / 100);
+
+    // 300
+    // );
+    // return () => clearTimeout(timer);
+    // console.log(hRef.current.clientHeight);
+  }, []);
 
   const projectsList = company?.map((co) => (
     <div className="p-2 rounded border border-gray-200 hover:border-red-500">
