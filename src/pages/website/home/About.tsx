@@ -27,8 +27,8 @@ const About = () => {
       <div
         className={`flex flex-col items-start justify-start gap-4 max-sm:gap-2 ${
           nodeH === 0
-            ? "h-auto bg-red-500"
-            : nodeH > `h-[${nodeH}px] bg-blue-500`
+            ? "h-auto bg-yellow-500"
+            : nodeH > `h-[${nodeH}px] bg-yellow-500`
         }`}
         data-aos="fade-up"
         ref={hRef}
@@ -36,7 +36,7 @@ const About = () => {
         <p className="capitalize">Safwan Mohamde,</p>
         <p>
           I got my passion with web development and providing marketing services
-          for startups helping them pass in the right path
+          for startups helping them passing the right path
         </p>
         <p>
           Currently, I'm working as Marketing Team Leader for severel e-commerce

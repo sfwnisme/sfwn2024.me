@@ -23,9 +23,10 @@ const Wrapper = (props: Props) => {
   return (
     <div
       id={title?.toLowerCase()}
-      className="WRAPPER z-0 h-[calc(100vh-85px)] md:px-1 flex items-center justify-center
-       bg-white sticky md:top-[-200px] top-0 transition 
-       duration-700"
+      className="WRAPPER z-0 min-h-[calc(100vh-85px)] md:px-1 flex items-center justify-center
+       bg-white sticky md:top-[60px] top-0 transition 
+       duration-700
+       "
     >
       <div className="INNER_WRAPPER z-10 h-full grid place-content-center grid-cols-1 md:grid-cols-[1fr_3fr] items-start max-sm:gap-4">
         <h3 className="text-lg text-gray-600 font-semibold inline-flex items-center gap-1 sm:mr-10 md:sticky top-96">

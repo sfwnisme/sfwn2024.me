@@ -8,63 +8,63 @@ const Work = () => {
       title: "Marketing Team Leader, IT",
       href: "https://makzanelc.com/",
       company: "Makhazen Electra",
-      year: "2024/mar - present",
+      year: "mar 2024 - present",
     },
     {
       icon: "./pr-logo.png",
       title: "Marketing Team Leader, IT",
       href: "",
       company: "PR Est.",
-      year: "2023/feb - present",
+      year: "feb 2023 - present",
       sub_jobs: [
         {
           icon: "./mieivc.avif",
           title: "Marketing Team Leader, IT",
           href: "https://mieivcksa.com",
           company: "Mieivc",
-          year: "2023/feb - present",
+          year: "feb 2023 - present",
         },
         {
           icon: "./soma.jpg",
           title: "Marketing Team Leader, IT",
           href: "https://soma.my.taker.io/",
           company: "Soma",
-          year: "2023/feb - present",
+          year: "feb 2023 - present",
         },
         {
           icon: "./hungrygate.png",
           title: "Marketing Team Leader, IT",
           href: "https://www.hungrygate.com/",
           company: "Hungery Gate",
-          year: "2023/feb - present",
+          year: "feb 2023 - present",
         },
         {
           icon: "./mazpro.jpg",
           title: "Marketing Team Leader, IT",
           href: "https://mazproo.com/",
           company: "Mazpro",
-          year: "2023/feb - present",
+          year: "feb 2023 - present",
         },
         {
           icon: "./cheveu.avif",
           title: "Marketing Team Leader, IT",
           href: "https://cheveu-solutions.com/",
           company: "Cheveu Solutions",
-          year: "2023/feb - present",
+          year: "feb 2023 - present",
         },
         {
           icon: "./4cs.png",
           title: "Marketing Team Leader, IT",
           href: "https://cheveu-solutions.com/",
           company: "4C's jewelry",
-          year: "2023/feb - present",
+          year: "feb 2023 - present",
         },
         {
           icon: "./aurora.avif",
           title: "Marketing Team Leader, IT",
           href: "https://auroraksa.com/",
           company: "Aurora",
-          year: "2023/feb - present",
+          year: "feb 2023 - present",
         },
       ],
     },
@@ -73,7 +73,7 @@ const Work = () => {
       title: "Marketing",
       href: "https://www.linkedin.com/company/%D8%B4%D8%B1%D9%83%D8%A9-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%A8%D9%8A%D8%AA%D9%8A/?trk=ppro_cprof&originalSubdomain=sa",
       company: "Albeity World for Computers",
-      year: "2021/aug - 2023/feb",
+      year: "aug 2021 - feb 2023",
     },
   ];
 
@@ -82,7 +82,6 @@ const Work = () => {
     // () =>
     // const wrapper = document.querySelector(".WRAPPER");
     // console.log((200 * wrapper.getBoundingClientRect()?.height) / 100);
-
     // 300
     // );
     // return () => clearTimeout(timer);
@@ -90,7 +89,7 @@ const Work = () => {
   }, []);
 
   const projectsList = company?.map((co) => (
-    <div className="p-2 rounded border border-gray-200 hover:border-red-500">
+    <div className="p-2 rounded border border-gray-100 hover:border-gray-300 hover:bg-gray-50/20 cursor-pointer">
       <div className="flex items-start justify-between gap-4 text-sm">
         <div className="bg-white md:h-12 h-12 md:w-12 w-12 grid place-items-center place-content-center border rounded-full p-3">
           {co?.icon ? (
@@ -112,7 +111,7 @@ const Work = () => {
       </div>
       {co?.sub_jobs ? (
         <>
-          <div className="flex flex-wrap gap-1 border border-gray-200 hover:border-red-300 p-2 ml-4 mt-2 rounded-sm cursor-pointer">
+          <div className="flex flex-wrap gap-1 border border-gray-100 hover:border-gray-200 p-2 mt-2 rounded-sm cursor-pointer">
             {co?.sub_jobs?.map((sub, idx) => (
               <div
                 className="flex items-start justify-between gap-2 text-sm"
@@ -152,9 +151,9 @@ const Work = () => {
             years in IT support
           </p>
           <p>
-            I started my career in online advertisement using the famous
-            platforms such as Meta, Snapchat, Tiktok and etc..., then I started
-            to manage and lead Marketing teams since 2023.
+            I started my career in online advertisement and marketing, and now
+            I'm focusing on the web supporting points for e-commerce with my web
+            development experience.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-3 items-center">

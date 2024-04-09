@@ -51,11 +51,11 @@ const Contact = () => {
   // const linksList = links?.map((link) => (
   //   <>
   //     {link?.disable ? null : (
-  //       <li className="relative text-sm w-fit p-[3px] bg-gray-0 rounded-sm border border-gray-200 hover:border-red-200 borde grow overflow-clip capitalize">
+  //       <li className="relative text-sm w-fit p-[3px] bg-gray-0 rounded-sm border border-gray-200 hover:border-sky-200 borde grow overflow-clip capitalize">
   //         <a
   //           href={link?.href}
   //           target="_blank"
-  //           className="group inline-flex items-center justify-between gap-4 hover:bg-red-500 text-gray-700 hover:text-white px-3 py-2 w-full rounded-sm transition duration-200"
+  //           className="group inline-flex items-center justify-between gap-4 hover:bg-sky-500 text-gray-700 hover:text-white px-3 py-2 w-full rounded-sm transition duration-200"
   //         >
   //           <div className="flex gap-2 flex-1 items-center">
   //             {React.createElement(link?.icon, { size: "1.5rem" })}
@@ -90,9 +90,9 @@ const Contact = () => {
 
   return (
     <Wrapper title="Contact">
-      <div className="" data-aos="fade-up">
+      <div className="bg-white" data-aos="fade-up">
         <p className="mb-8">
-          Have any question or for bussiness requirements feel free to contact
+          Have any question and for bussiness requirements feel free to contact
           me using the following contact channels
         </p>
         {/* <ul className="grid grid-col-1 md:grid-cols-2 gap-2">{linksList}</ul> */}
