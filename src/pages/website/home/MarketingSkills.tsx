@@ -11,8 +11,8 @@ const MarketingSkills = () => {
     "Plans and Insights",
     "Reports",
     "Launching Full E-commerce projects",
-    "Reinforce vulnerability e-commerce factors",
-    "Following the organization Objectives and intentions",
+    "Reinforce e-commerce vulnerable factors",
+    "Following the organization objectives and intentions",
     "Automate stereotype tasks",
     "Team management",
   ];
@@ -27,8 +27,8 @@ const MarketingSkills = () => {
     <Wrapper title="Marketing Skills">
       <div className="" data-aos="fade-up">
         <p className="mb-8">
-          Over 5 years of professional experience I'm glad to have these skills
-          and capabilites
+          Over 5 years of gaining experience I'm glad to have the following
+          skills and capabilites
         </p>
         <ul className="flex flex-wrap gap-0.5 mb-2">
           {list(showLimit(mainTechs))}

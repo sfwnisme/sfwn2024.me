@@ -18,7 +18,7 @@ const Contact = () => {
   const links: LinksTypes[] = [
     {
       title: "email",
-      href: "mailto:safwan@sfwn.me",
+      href: "mailto:hi@sfwn.me",
       icon: CiMail,
       disable: false,
     },
@@ -92,8 +92,8 @@ const Contact = () => {
     <Wrapper title="Contact">
       <div className="bg-white" data-aos="fade-up">
         <p className="mb-8">
-          Have any question and for bussiness requirements feel free to contact
-          me using the following contact channels
+          Having any question and for bussiness requirements feel free to
+          contact , you will find me active on the following channels.
         </p>
         {/* <ul className="grid grid-col-1 md:grid-cols-2 gap-2">{linksList}</ul> */}
         <ul className="flex flex-wrap gap-0.5">{linksList}</ul>

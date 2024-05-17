@@ -17,7 +17,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: orangered;
+  background: rgb(57, 57, 255);
   border-radius: 1.2px;
   -webkit-border-radius: 1.2px;
   -moz-border-radius: 1.2px;

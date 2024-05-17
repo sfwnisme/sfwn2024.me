@@ -27,8 +27,8 @@ const About = () => {
       <div
         className={`flex flex-col items-start justify-start gap-4 max-sm:gap-2 ${
           nodeH === 0
-            ? "h-auto bg-yellow-500"
-            : nodeH > `h-[${nodeH}px] bg-yellow-500`
+            ? "h-auto bg-blue-500"
+            : nodeH > `h-[${nodeH}px] bg-blue-500`
         }`}
         data-aos="fade-up"
         ref={hRef}
@@ -36,16 +36,17 @@ const About = () => {
         <p className="capitalize">Safwan Mohamde,</p>
         <p>
           I got my passion with web development and providing marketing services
-          for startups helping them passing the right path
+          for startups helping them passing the right course.
         </p>
         <p>
-          Currently, I'm working as Marketing Team Leader for severel e-commerce
-          in KSA.
+          Currently, I'm working the marketing, and web development fields for
+          severel e-commerce in KSA.
         </p>
         <p>
-          Frontend development got the most of my interest, thus I'm scaling
-          that for {""}
-          {year} till now
+          For bussiness requirements{" "}
+          <a href="mailto:hi@sfwn.me" className="underline text-blue-500">
+            contact me
+          </a>
         </p>
       </div>
     </Wrapper>

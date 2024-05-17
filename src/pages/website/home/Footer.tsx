@@ -5,7 +5,7 @@ const Footer = () => {
       <span className="year block text-xs text-gray-500">
         &copy;{year} | All Rights Reserved {""}
         <a
-          className="text-yellow-500 font-medium hover:underline"
+          className="text-blue-500 font-medium hover:underline"
           href="https://github.com/sfwnisme"
         >
           SFWN

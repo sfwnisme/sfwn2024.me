@@ -5,49 +5,49 @@ const Work = () => {
   const company = [
     {
       icon: "./makhazen-logo.png",
-      title: "Marketing Team Leader, IT",
+      title: "Marketing Director, IT",
       href: "https://makzanelc.com/",
       company: "Makhazen Electra",
       year: "mar 2024 - present",
     },
     {
       icon: "./pr-logo.png",
-      title: "Marketing Team Leader, IT",
+      title: "Marketing Team Assistant, IT",
       href: "",
       company: "PR Est.",
       year: "feb 2023 - present",
       sub_jobs: [
         {
           icon: "./mieivc.avif",
-          title: "Marketing Team Leader, IT",
+          title: "Data analysis, IT",
           href: "https://mieivcksa.com",
           company: "Mieivc",
           year: "feb 2023 - present",
         },
         {
           icon: "./soma.jpg",
-          title: "Marketing Team Leader, IT",
+          title: "Data analysis, IT",
           href: "https://soma.my.taker.io/",
           company: "Soma",
           year: "feb 2023 - present",
         },
         {
           icon: "./hungrygate.png",
-          title: "Marketing Team Leader, IT",
+          title: "IT",
           href: "https://www.hungrygate.com/",
           company: "Hungery Gate",
           year: "feb 2023 - present",
         },
         {
           icon: "./mazpro.jpg",
-          title: "Marketing Team Leader, IT",
+          title: "Marketing Team Director, IT",
           href: "https://mazproo.com/",
           company: "Mazpro",
           year: "feb 2023 - present",
         },
         {
           icon: "./cheveu.avif",
-          title: "Marketing Team Leader, IT",
+          title: "Marketing Team Assistant, IT",
           href: "https://cheveu-solutions.com/",
           company: "Cheveu Solutions",
           year: "feb 2023 - present",
@@ -111,7 +111,7 @@ const Work = () => {
       </div>
       {co?.sub_jobs ? (
         <>
-          <div className="flex flex-wrap gap-1 border border-gray-100 hover:border-gray-200 p-2 mt-2 rounded-sm cursor-pointer">
+          <div className="flex flex-wrap gap-y-2 gap-x-3 border border-gray-100 hover:border-gray-200 p-2 mt-2 rounded-sm cursor-pointer">
             {co?.sub_jobs?.map((sub, idx) => (
               <div
                 className="flex items-start justify-between gap-2 text-sm"
@@ -143,17 +143,12 @@ const Work = () => {
   ));
 
   return (
-    <Wrapper title="Work">
+    <Wrapper title="Experience">
       <div data-aos="fade-up">
         <div className="flex flex-col gap-4 mb-8">
           <p>
             I've over 5 years professional experience in digital marketing and 2
-            years in IT support
-          </p>
-          <p>
-            I started my career in online advertisement and marketing, and now
-            I'm focusing on the web supporting points for e-commerce with my web
-            development experience.
+            years in IT support and web development.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-3 items-center">
