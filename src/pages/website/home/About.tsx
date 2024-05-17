@@ -39,8 +39,8 @@ const About = () => {
           for startups helping them passing the right course.
         </p>
         <p>
-          Currently, I'm working the marketing, and web development fields for
-          severel e-commerce in KSA.
+          Currently, I'm working in the marketing, and web development fields
+          for severel e-commerce in KSA.
         </p>
         <p>
           For bussiness requirements{" "}
