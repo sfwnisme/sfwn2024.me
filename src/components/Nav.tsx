@@ -14,6 +14,7 @@ const Nav = () => {
         </div>
         <Btn>Contact</Btn>
       </div>
+      <a href="mailto:hi@sfwn.me" className="absolute top-full bg-yellow-200 text-yellow-600 text-sm p-1 rounded-sm">#Open_to_work</a>
     </nav>
   );
 };

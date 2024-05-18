@@ -29,7 +29,7 @@ const App = () => {
         <Intor />
         <About />
         <Contact />
-        <Work />
+        {/* <Work /> */}
         <FrontendSkills />
         <MarketingSkills />
         <Footer />
