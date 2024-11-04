@@ -24,11 +24,11 @@ const Btn01 = () => {
         <button
           type="button"
           title="go up"
-          className={`z-50 fixed bottom-8 right-4 p-px text-gray-700 hover:text-white border border-gray-200 hover:border-blue-300 border-dashed rounded bg-white hover:bg-gray-100 trnasition duration-150 ${showUp}`}
+          className={`z-50 fixed bottom-8 right-4 p-px text-gray-700 hover:text-white border border-gray-200 hover:border-zinc-300 border-dashed rounded bg-white hover:bg-gray-100 trnasition duration-150 ${showUp}`}
           onClick={() => setUp((prev) => ++prev)}
         >
-          <div className="p-[2px] m-px hover:bg-blue-500 rounded-sm">
-            <SlArrowUp className="bg-white rounded-sm text-blue-500 p-px" />
+          <div className="p-[2px] m-px hover:bg-zinc-500 rounded-sm">
+            <SlArrowUp className="bg-white rounded-sm text-zinc-500 p-px" />
           </div>
         </button>
       ) : null}

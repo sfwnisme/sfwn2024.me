@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import "./Loader.css";
+import "./Loader.css";
 import { DELAY } from "../utils/utils";
 const Loader = () => {
   const [loader, setLoader] = useState(true);
@@ -15,8 +15,10 @@ const Loader = () => {
   return (
     <>
       {loader ? (
-        <div className="h-screen w-screen bg-white fixed top-0 left-0 z-50">
-          <img src="./logo2.png" alt="loader logo" className="h-12 absolute transform -tranzinc-x-1/2 -tranzinc-y-1/2 top-1/2 left-1/2 animate-pulse" />
+        <div className="z-50 h-screen w-screen fixed top-0 left-0 bg-white grid place-content-center">
+          <div className="spinner">
+            <div className="spinner1"></div>
+          </div>
         </div>
       ) : null}
     </>

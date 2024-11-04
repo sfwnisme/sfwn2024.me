@@ -7,14 +7,21 @@ const Nav = () => {
         <div className="logo h-6 flex-1">
           <img
             // src="https://res.cloudinary.com/daa68wahe/image/upload/v1700999882/Asset_2_id04vx.png"
-            src="./sfwn-logo-black.png"
+            // src="./sfwn-logo-black.png"
+            // src="./logo.png"
+            src="./logo2.png"
             alt="sfwn.me's logo"
             className="h-full"
           />
         </div>
         <Btn>Contact</Btn>
       </div>
-      <a href="mailto:hi@sfwn.me" className="absolute top-full bg-yellow-200 text-yellow-600 text-sm p-1 rounded-sm">#Open_to_work</a>
+      <a
+        href="mailto:safwanmohamedabdo@gmail.com"
+        className="absolute top-full bg-yellow-200 text-yellow-600 text-sm p-1 rounded-sm"
+      >
+        #Open_to_work
+      </a>
     </nav>
   );
 };

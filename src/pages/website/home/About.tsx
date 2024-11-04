@@ -25,11 +25,10 @@ const About = () => {
   return (
     <Wrapper title="About">
       <div
-        className={`flex flex-col items-start justify-start gap-4 max-sm:gap-2 ${
-          nodeH === 0
-            ? "h-auto bg-blue-500"
-            : nodeH > `h-[${nodeH}px] bg-blue-500`
-        }`}
+        className={`flex flex-col items-start justify-start gap-4 max-sm:gap-2 ${nodeH === 0
+          ? "h-auto bg-zinc-500"
+          : nodeH > `h-[${nodeH}px] bg-zinc-500`
+          }`}
         data-aos="fade-up"
         ref={hRef}
       >
@@ -44,7 +43,7 @@ const About = () => {
         </p>
         <p>
           For bussiness requirements{" "}
-          <a href="mailto:hi@sfwn.me" className="underline text-blue-500">
+          <a href="mailto:hi@sfwn.me" className="underline text-zinc-500">
             contact me
           </a>
         </p>
