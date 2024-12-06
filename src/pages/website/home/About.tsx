@@ -1,36 +1,11 @@
-import { useEffect, useRef, useState } from "react";
 import Wrapper from "../../../components/Wrapper";
 
 const About = () => {
-  const [nodeH, setNodeH] = useState(0);
-  const hRef = useRef(null);
-  const wrapperRef = useRef(null);
-  const year = new Date().getFullYear() - 2021;
-  console.log(year);
-  useEffect(() => {
-    // const timer = setTimeout(
-    // () =>
-    const wrapper = document.querySelector(".WRAPPER");
-    console.log(wrapper.getBoundingClientRect()?.height);
-
-    let height = hRef?.current?.getBoundingClientRect()?.height;
-    console.log(height);
-    setNodeH(height);
-    // 300
-    // );
-    // return () => clearTimeout(timer);
-    // console.log(hRef.current.clientHeight);
-  }, []);
-
   return (
     <Wrapper title="About">
       <div
-        className={`flex flex-col items-start justify-start gap-4 max-sm:gap-2 ${nodeH === 0
-          ? "h-auto bg-zinc-500"
-          : nodeH > `h-[${nodeH}px] bg-zinc-500`
-          }`}
+        className={`flex flex-col items-start justify-start gap-4 max-sm:gap-2`}
         data-aos="fade-up"
-        ref={hRef}
       >
         <p className="capitalize">Safwan Mohamde,</p>
         <p>

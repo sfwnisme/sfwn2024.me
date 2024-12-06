@@ -1,4 +1,4 @@
-import Btn from "./Btn";
+import Button from "./Button";
 
 const Nav = () => {
   return (
@@ -14,7 +14,7 @@ const Nav = () => {
             className="h-full"
           />
         </div>
-        <Btn>Contact</Btn>
+        <Button>Contact</Button>
       </div>
       <a
         href="mailto:safwanmohamedabdo@gmail.com"
