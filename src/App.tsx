@@ -3,7 +3,7 @@ import Nav from "./components/Nav";
 import About from "./pages/website/home/About";
 import Contact from "./pages/website/home/Contact";
 import Footer from "./pages/website/home/Footer";
-import Intor from "./pages/website/home/Intor";
+import Intro from "./pages/website/home/Intro";
 import FrontendSkills from "./pages/website/home/FrontendSkills";
 import AOS from "aos";
 
@@ -27,9 +27,9 @@ export default function App() {
   return (
     <div className="mx-auto">
       <Nav />
-      <div className="container mx-auto">
+      <div className="mx-auto">
 
-        <Intor />
+        <Intro />
         <Projects />
         <About />
         <Contact />
