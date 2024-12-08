@@ -1,30 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-  theme: {
-    extend: {
-      container: {
-        center: true,
-        padding: '1rem',
-        screens: {
-          none: '100%',
-          sm: '640px',
-          // md: '768px',
-          // lg: '992px',
-          // lg: '1024px',
-          // xl: '1280px',
-          // '2xl': '1536px'
-        },
-      },
-      gridTemplateColumns: {
-        '12fr': '1fr 3fr'
-      }
-    },
-  },
-  plugins: [],
-}
+	content: ["./src/**/*.{js,jsx,ts,tsx}"],
+	theme: {
+		extend: {
+			animation: {
+				pulse: "pulse 5s linear infinite",
+			},
+			container: {
+				center: true,
+				padding: "1rem",
+				screens: {
+					none: "100%",
+					sm: "640px",
+					// md: '768px',
+					// lg: '992px',
+					// lg: '1024px',
+					// xl: '1280px',
+					// '2xl': '1536px'
+				},
+			},
+			gridTemplateColumns: {
+				"12fr": "1fr 3fr",
+			},
+		},
+	},
+	plugins: [],
+};
 
 // None	width: 100%;
 // sm (640px)	max-width: 640px;
