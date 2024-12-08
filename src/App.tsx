@@ -7,39 +7,33 @@ import Intro from "./pages/website/home/Intro";
 import FrontendSkills from "./pages/website/home/FrontendSkills";
 import AOS from "aos";
 
-
-// import "aos/dist/aos.css";
 import Loader from "./components/Loader";
 import MarketingSkills from "./pages/website/home/MarketingSkills";
-import Btn01 from "./components/Btn01";
 import Projects from "./pages/website/home/Projects";
-// import Projects from "./pages/website/home/Projects";
 
 export default function App() {
-  useEffect(() => {
-    AOS.init({
-      offset: 0,
-      duration: 200,
-      easing: "ease-in-sine",
-      delay: 0,
-    });
-  }, []);
-  return (
-    <div className="mx-auto">
-      <Nav />
-      <div className="mx-auto">
-
-        <Intro />
-        <Projects />
-        <About />
-        <Contact />
-        {/* <Work /> */}
-        <FrontendSkills />
-        <MarketingSkills />
-        <Footer />
-        <Loader />
-      </div>
-      <Btn01 />
-    </div>
-  );
-};
+	useEffect(() => {
+		AOS.init({
+			offset: 0,
+			duration: 200,
+			easing: "ease-in-sine",
+			delay: 0,
+		});
+	}, []);
+	return (
+		<div className="mx-auto">
+			<Nav />
+			<div className="mx-auto">
+				<Intro />
+				<Projects />
+				<About />
+				<Contact />
+				{/* <Work /> */}
+				<FrontendSkills />
+				<MarketingSkills />
+				<Footer />
+				<Loader />
+			</div>
+		</div>
+	);
+}
