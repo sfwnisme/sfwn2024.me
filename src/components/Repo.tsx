@@ -49,7 +49,7 @@ export default function Repo({ repo = "visi" }: Props) {
 						className="font-mono font-medium text-blue-500"
 						icon="invisible"
 						weight="bold"
-						underline="visible"
+						// underline="visible"
 					>
 						{data?.name}
 					</Link>

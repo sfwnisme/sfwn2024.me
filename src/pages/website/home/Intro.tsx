@@ -1,7 +1,7 @@
 const Intro = () => {
 	return (
-		<div className="bg-black">
-			<div className="relative h-[calc(100svh-85px)] w-full max-w-[700px] mx-auto px-4 flex flex-col justify-center items-start">
+		<div className="bg-gray-950 border-b border-b-gray-700">
+			<div className="relative h-[calc(100svh-61px)] w-full max-w-[700px] mx-auto px-4 flex flex-col justify-center items-start">
 				<h1 className="text-gray-300 text-3xl font-bold mb-2">
 					Safwan Mohamed
 				</h1>

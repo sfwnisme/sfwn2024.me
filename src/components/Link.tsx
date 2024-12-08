@@ -28,10 +28,10 @@ export default function Link({
 			{...rest}
 			href={href}
 			title=""
-			className={`flex items-center font-mono text-sm text-blue-500 ${
+			className={`inline-flex items-center font-mono text-sm text-blue-500 ${
 				underline === "visible" ? "underline" : "no-underline"
 			} 
-      ${weight === "bold" ? "font-semibold" : "font-normal"}
+      ${weight === "bold" ? "font-bold" : "font-thin"}
       underline-offset-4 group`}
 		>
 			{children}
