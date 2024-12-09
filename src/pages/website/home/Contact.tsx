@@ -17,8 +17,14 @@ interface LinksTypes {
 const Contact = () => {
 	const links: LinksTypes[] = [
 		{
+			title: "linkedin",
+			href: "https://linkedin.com/in/sfwnisme",
+			icon: CiLinkedin,
+			disable: false,
+		},
+		{
 			title: "email",
-			href: "mailto:hi@sfwn.me",
+			href: "mailto:safwanmohamedabdo@sfwn.me",
 			icon: CiMail,
 			disable: false,
 		},
@@ -26,12 +32,6 @@ const Contact = () => {
 			title: "github",
 			href: "https://github.com/sfwnisme",
 			icon: VscGithubAlt,
-			disable: false,
-		},
-		{
-			title: "linkedin",
-			href: "https://linkedin.com/in/sfwnisme",
-			icon: CiLinkedin,
 			disable: false,
 		},
 		{
@@ -47,26 +47,6 @@ const Contact = () => {
 			disable: false,
 		},
 	];
-
-	// const linksList = links?.map((link) => (
-	//   <>
-	//     {link?.disable ? null : (
-	//       <li className="relative text-sm capitalize rounded-sm border border-gray-200 w-fit p-[3px] bg-gray-0 borde grow overflow-clip hover:border-sky-200">
-	//         <a
-	//           href={link?.href}
-	//           target="_blank"
-	//           className="inline-flex gap-4 justify-between items-center py-2 px-3 w-full text-gray-700 rounded-sm transition duration-200 hover:text-white group hover:bg-sky-500"
-	//         >
-	//           <div className="flex flex-1 gap-2 items-center">
-	//             {React.createElement(link?.icon, { size: "1.5rem" })}
-	//             {link?.title}
-	//           </div>
-	//           <MdArrowOutward className="font-bold duration-200 transform group-hover:scale-125 group-hover:rotate-[45deg]" />
-	//         </a>
-	//       </li>
-	//     )}
-	//   </>
-	// ));
 
 	const linksList = links?.map((link) => (
 		<>

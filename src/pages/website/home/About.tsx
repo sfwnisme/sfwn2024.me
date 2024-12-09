@@ -20,7 +20,7 @@ const About = () => {
 				<p>
 					For bussiness requirements{" "}
 					<Link
-						href="mailto:hi@sfwn.me"
+						href="mailto:safwanmohamedabdo@gmail.com"
 						className="underline text-zinc-500"
 						// weight="bold"
 						underline="visible"

@@ -3,46 +3,37 @@
 @tailwind utilities;
 
 ::selection {
-  background-color: rgb(0, 0, 0);
-  color: white;
+	background-color: rgb(0, 0, 0);
+	color: white;
 }
 
 body {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-  background: rgba(255, 255, 0, 0);
-  width: 4px;
+	background: rgba(255, 255, 0, 0);
+	width: 4px;
+	display: none;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(57, 57, 255);
-  border-radius: 1.2px;
-  -webkit-border-radius: 1.2px;
-  -moz-border-radius: 1.2px;
-  -ms-border-radius: 1.2px;
-  -o-border-radius: 1.2px;
+	/*background: rgb(57, 57, 255);*/
+	display: none;
+	border-radius: 1.2px;
+	-webkit-border-radius: 1.2px;
+	-moz-border-radius: 1.2px;
+	-ms-border-radius: 1.2px;
+	-o-border-radius: 1.2px;
 }
 
 html,
 body,
 * {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: 100-900; */
-  font-style: normal;
+	font-family: "Montserrat", sans-serif;
+	/* font-family: monospace; */
+	font-optical-sizing: auto;
+	font-style: normal;
+	/* letter-spacing: 0.15px; */
+	/* line-height: 1.2; */
 }
-
-
-/*
-font-thin	font-weight: 100;
-font-extralight	font-weight: 200;
-font-light	font-weight: 300;
-font-normal	font-weight: 400;
-font-medium	font-weight: 500;
-font-semibold	font-weight: 600;
-font-bold	font-weight: 700;
-font-extrabold	font-weight: 800;
-font-black	font-weight: 900;
-*/
